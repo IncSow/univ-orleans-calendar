@@ -1,3 +1,6 @@
+#!/usr/bin/ruby
+# frozen_string_literal: true
+
 require 'discord_notifier'
 require 'date'
 require 'ferrum'
