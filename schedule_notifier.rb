@@ -20,7 +20,7 @@ browser.at_css("input#password").focus.type(ENV['PASSWORD'])
 browser.at_css("button[type='submit']").focus.click
 browser.network.wait_for_idle
 browser.go_to('https://aderead2022.univ-orleans.fr/direct/myplanning.jsp')
-browser.network.wait_for_idle
+browser.network.wait_for_idle(timeout: 50)
 browser.screenshot(path: "schedule.png", selector: ".planningPanel")
 browser.quit
 
